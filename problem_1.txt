@@ -22,17 +22,17 @@ bool mycomp(int &a, int &b){
 main(){
 	int n;
 	
-	cin>>n;														// input for no of elements in array
+	cin>>n;								// input for no of elements in array
 	
 	vector<int> arr(n);
 	
-	for(int i=0; i<n; i++){										// take input from the user
+	for(int i=0; i<n; i++){						// take input from the user
 		cin>>arr[i];
 	}
 	
-	sort(arr.begin(),arr.end(),mycomp);							// sort array based on absolute values
+	sort(arr.begin(),arr.end(),mycomp);				// sort array based on absolute values
 	
-	for(int i=0; i<n; i++){										// output the resulting array
+	for(int i=0; i<n; i++){						// output the resulting array
 		cout<<arr[i]<<" ";
 	}
 }
