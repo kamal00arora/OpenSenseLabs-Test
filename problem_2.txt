@@ -18,19 +18,19 @@ using namespace std;
 main(){
 	int t,n;
 	
-	cin>>t;															// input no of test cases
+	cin>>t;								// input no of test cases
 	
 	while(t--){
-		cin>>n;														// number of elements in array
+		cin>>n;							// number of elements in array
 		
 		int arr[n];
 		
 		for(int i=0; i<n; i++){
-			cin>>arr[i];											// input array n elements
+			cin>>arr[i];					// input array n elements
 		}
 		
 		long long ans = 1;
-		for(int i=0; i<n; i++){										// store result in ans variable
+		for(int i=0; i<n; i++){					// store result in ans variable
 			ans *= arr[i];
 		}
 		
